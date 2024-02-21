@@ -1,0 +1,29 @@
+# ************************************
+# * Alexis Tercero
+# * 2024-02-20
+# * alexistercero55@gmail.com
+# * Train word2vec pipeline
+# ************************************
+name: Train-Word2vec
+
+on:
+  push:
+    branches: 
+      - 10-research-positional-encoding
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  train_model:
+    runs-on: [self-hosted, word2vec]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: change-dir
+        shell: bash
+        run: cd ./Development/word2vecTrain/
+        
+      - name: word-demo
+        shell: bash
+        run: ./train.sh
