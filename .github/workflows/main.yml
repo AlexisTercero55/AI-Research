@@ -20,10 +20,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: change-dir
+      - name: training 
         shell: bash
-        run: cd ./Development/word2vecTrain/
-        
-      - name: word-demo
-        shell: bash
-        run: ./train.sh
+        run: ./Development/word2vecTrain/train.sh
