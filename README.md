@@ -1,0 +1,1 @@
+[![Train-Word2vec](https://github.com/AlexisTercero55/AI-Research/actions/workflows/main.yml/badge.svg)](https://github.com/AlexisTercero55/AI-Research/actions/workflows/main.yml)
